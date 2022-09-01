@@ -1,6 +1,9 @@
 st=[]
 def Push(st,val):
-    st.append(val)
+    if len(st)>10:
+        print("Overflow")
+    else:
+        st.append(val)
 def Pop(st):
     if len(st)==0:
         print("Underflow")
@@ -26,5 +29,5 @@ while True:
         Peek(st)
     elif n == 4:
         print(st)
-    elif n == 5:
+    else:
         break
