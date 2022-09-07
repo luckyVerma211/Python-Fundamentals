@@ -1,7 +1,3 @@
-from ast import Num
-from re import A
-
-
 n=int(input("Enter the number:"))
 s=0
 a=n
